@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Exemplo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <!-- Barra de navegação -->
+        <nav>
+            <img src="imagens/logo.png" alt="Logo do site exemplo">
+            <span>
+                <a href="index.html">Home</a>
+                <a href="empresa.html">Empresa</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="fotos.html">Fotos</a>
+                <a href="videos.html">Vídeos</a>
+                <a href="contato.html">Contato</a>
+            </span>
+        </nav>
+    </header>
+
+    <!-- Seção ou divisões da página -->
+    <section class="imagem_destaque">
+        <img src="imagens/destaque_6.png" alt="Parte interna do escritório da empresa">
+    </section>
+
+    <!-- Área com o conteúdo principal da página -->
+    <article>
+        <h1>Formulário de contato</h1>
+        <section class="contato">
+            <form action="enviacontato.php" method="post">
+
+                <div>
+                    <label for="">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <label for="">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="">Sexo:</label>
+                    <input type="radio" id="masculino" name="sexo" value="masc"> Masculino
+                    <input type="radio" id="feminino" name="sexo" value="fem"> Feminino
+                </div>
+                <div>
+                    <label for="">Estado:</label>
+                    <select name="estado" id="estado">
+                        <option value="SP">São Paulo</option>
+                        <option>MG</option>
+                        <option>PR</option>
+                        <option>RS</option>
+                        <option>BA</option>
+                        <option>ES</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">Comentário:</label>
+                    <textarea name="comentario" id="comentario" rows="8"></textarea>
+                </div>
+                <div>
+                    <label for="">Hobbies: </label>
+                    <input type="checkbox" name="cantar" id="cantar" value="1"> Cantar
+                    <input type="checkbox" name="dormir" id="dormir" value="1"> Dormir
+                    <input type="checkbox" name="dancar" id="dancar" value="1"> Dançar
+                    <input type="checkbox" name="tocar" id="tocar" value="1"> Tocar
+                    <input type="checkbox" name="jogar" id="jogar" value="1"> Jogar
+                </div>
+                <div>
+                    <input type="submit" name="enviar" id="enviar" value="Enviar Formulário">
+                </div>
+
+
+                <br><br><br><br>
+            </form>
+        </section>
+        <section class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.317702257933!2d-47.3987115293862!3d-22.5672179258194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c880ee0caac24d%3A0x95fcf7d5914d4d50!2sSenac%20Limeira!5e0!3m2!1spt-PT!2sbr!4v1731348644125!5m2!1spt-PT!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section></section>
+    </article>
+
+
+
+    <!-- Rodapé do site -->
+    <footer>    
+        <div>
+            &copy; 2024 | Site de Exemplo | Créditos
+        </div>
+        <div>
+            <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://whatsapp.com" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
